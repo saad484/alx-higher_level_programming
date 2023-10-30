@@ -1,6 +1,5 @@
-/bin/bash: line 1: q: command not found
+#ifndef LISTS_H
 #define LISTS_H
-
 #include <stdlib.h>
 
 /**
