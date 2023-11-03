@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import sys
+from calculator_1 import add, sub, mul, div
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
@@ -7,21 +8,21 @@ if __name__ == "__main__":
         sys.exit(1)
 
     a = int(sys.argv[1])
-    operator = sys.argv[2]
+    op = sys.argv[2]
     b = int(sys.argv[3])
 
-    if operator == "+":
-        res = a + b
-        print("{} {} {} = {}".format(a, operator, b, res))
-    elif operator == "-":
-        res = a - b
-        print("{} {} {} = {}".format(a, operator, b, res))
-    elif operator == "*":
-        res = a * b
-        print("{} {} {} = {}".format(a, operator, b, res))
-    elif operator == "/":
-        res = a / b
-        print("{} {} {} = {}".format(a, operator, b, res))
+    if op == "+":
+        res = add(a, b)
+        print("{} {} {} = {}".format(a, op, b, res))
+    elif op == "-":
+        res = sub(a, b)
+        print("{} {} {} = {}".format(a, op, b, res))
+    elif op == "*":
+        res = mul(a, b)
+        print("{} {} {} = {}".format(a, op, b, res))
+    elif op == "/":
+        res = div(a, b)
+        print("{} {} {} = {}".format(a, op, b, res))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
