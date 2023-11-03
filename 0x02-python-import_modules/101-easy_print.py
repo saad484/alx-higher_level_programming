@@ -1,3 +1,2 @@
-#!/usr/bin/pyhton3
-if __name__ == "__main__":
-    __import__('os').write(1, b"#pythoniscool\n")
+#!/usr/bin/python3
+__import__("os").write(1, "#pythoniscool\n".encode("UTF-8"))
