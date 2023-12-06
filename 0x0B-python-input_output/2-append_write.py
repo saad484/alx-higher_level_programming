@@ -2,6 +2,7 @@
 
 """Define an append to text file function"""
 
+
 def append_write(filename="", text=""):
     with open(filename, "a", encoding='utf-8') as f:
         """Appends a string to the end of a UTF8 text file.
