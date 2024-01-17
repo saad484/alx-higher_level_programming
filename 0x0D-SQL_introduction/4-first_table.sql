@@ -1,2 +1,2 @@
 -- Create A table
-CREATE TABLE first_table;
+CREATE IF NOT EXISTS TABLE `first_table` (`id` INT, `name` VARCHAR(256));
